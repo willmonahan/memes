@@ -1,2 +1,10 @@
-# memes
+# Memes Project Outline
 Drawing on the Web Final Project
+
+For my final project in this class, I’d like to do a number of HTML Canvas drawings inspired by popular memes. I spend a lot of time on Reddit, and although they’re not very serious, memes are a great source for comedy and possibly even art, and have become increasingly important in pop culture. I think it would be interesting to use HTML Canvas to generate and animate both images and text used in memes. I would like to experiment with using the p5 animation techniques to animate elements of existing, still-image memes. I also think it would be interesting to use JavaScript (and maybe JSON, I have some experience with it) to randomly generate text or even entire memes from a database that I select. For instance, memes are typically formatted as variations of text accompanying a common image, but I could use JavaScript to let a user select a topic and then randomly draw a meme using that topic. I would achieve this by drawing images and text separately, and I would only draw the text using the HTML Canvas, not using HTML elements.
+
+Some memes that would be well suited for this technique include the Arthur Fist meme, the Increasing Intelligence meme, the Whomst meme, and the Who Would Win? Meme.
+
+I know that memes can seem kind of silly, but I think that they’re simple format lends itself well to generating custom memes through the HTML Canvas. I want to try something ambitious with this project, and make sure that even all of my drawings are, at the very least, generated through a JavaScript procedure which selects the content from a database it can draw upon.
+
+I am including as images/sketches a few memes based on the angry Arthur Fist meme. This text could be procedurally generated, and I could come up with some funny NYU jokes and WebDev references. I think it would also be interesting to have the user be able to move the fist around, which hopefully would not be too difficult to do, but I haven't included this in the examples.
