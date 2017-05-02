@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	transition: .4s;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: light;
+}
+
+.quarter {
+	height: 25%;
+	width: 100%;
+}
+
+.one {
+	background-color: #bbb;
+	color: #555;
+}
+
+.two {
+	background-color: #999;
+	color: #666;
+}
+
+.three {
+	background-color: #777;
+	color: #aaa;
+}
+
+.four {
+	background-color: #555;
+	color: #bbb;
+}
+
+div:hover {
+	background-color: #111;
+	color: #fff;
+}
+
+div:active {
+	background-color: #eee;
+	color: #111;
+}
