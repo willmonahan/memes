@@ -1,7 +1,7 @@
 var img = [];
 var salads = [];
 var saladnum = 6;;
-var imagenum = 6;;
+var imagenum = 10;;
 var previous;
 
 function setup() {
