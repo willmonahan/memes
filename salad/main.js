@@ -1,6 +1,6 @@
 var img = [];
 var salads = [];
-var count = 1;
+var previous;
 
 function preload() {
 
@@ -55,7 +55,7 @@ function reimage() {
 	image(img[randomImage], x, y, width, height);
 
 	var saladx = Math.floor(Math.random()*(windowWidth-saladScale*salads[randomSalad].width));
-	var salady = Math.floor(Math.random()*(windowHeight-saladScale*salads[randomSalad].height));
+	var salady = Math.floor(Math.random()*(windowHeight/3-saladScale*salads[randomSalad].height)) + 2*windowHeight/3;
 
 	image(salads[randomSalad], saladx, salady, saladScale*salads[randomSalad].width, saladScale*salads[randomSalad].height);
 	count++
@@ -63,4 +63,4 @@ function reimage() {
 		count = 1;
 	}
 }
-setInterval(reimage, 1000);
+setInterval(reimage, 1500);
