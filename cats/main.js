@@ -2,7 +2,7 @@ var img = []; //this variable will hold the available images
 var centerX;
 var centerY;
 var cats = []; //this array holds all the cats onscreen
-var catnumber = 6; // this is the number of cat photos in the folder (I need to change this manually)
+var catnumber = 9; // this is the number of cat photos in the folder (I need to change this manually)
 var increment = 0.0075; //this is the increment by which the scale of the cats grows
 var previous = -1; //this will be used to make sure the cats don't repeat
 
