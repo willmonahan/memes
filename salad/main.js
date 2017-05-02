@@ -12,11 +12,11 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255);
 
-	for(i = 1; i <=2; i++) {
+	for(i = 1; i <=6; i++) {
 		img[i] = loadImage("images/"+i+".jpg");
 	}
 
-	for(i = 1; i <=3; i++) {
+	for(i = 1; i <=6; i++) {
 		salads[i] = loadImage("images/salads/salad"+i+".png");
 	}
 }
@@ -38,8 +38,8 @@ function preserveAspect(image) {
 }
 
 function reimage() {
-	var randomImage = Math.floor(Math.random()*2)+1;
-	var randomSalad = Math.floor(Math.random()*3)+1;
+	var randomImage = Math.floor(Math.random()*6)+1;
+	var randomSalad = Math.floor(Math.random()*6)+1;
 	var scale = preserveAspect(img[randomImage]);
 	var saladScale = (windowHeight/4.5)/salads[randomSalad].height;
 	var width = scale*img[randomImage].width;
@@ -53,7 +53,11 @@ function reimage() {
 		y = (height-windowHeight)/-2;
 	}
 	image(img[randomImage], x, y, width, height);
-	image(salads[randomSalad], 0, 0, saladScale*salads[randomSalad].width, saladScale*salads[randomSalad].height);
+
+	var saladx = Math.floor(Math.random()*(windowWidth-saladScale*salads[randomSalad].width));
+	var salady = Math.floor(Math.random()*(windowHeight-saladScale*salads[randomSalad].height));
+
+	image(salads[randomSalad], saladx, salady, saladScale*salads[randomSalad].width, saladScale*salads[randomSalad].height);
 	count++
 	if(count > 2) {
 		count = 1;
